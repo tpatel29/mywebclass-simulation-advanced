@@ -29,9 +29,9 @@ Automated tests may require updates as site changes
 
 ## Estimated Effort:
 
-User Story 1: 5 story points
-User Story 2: 3 story points
-User Story 3: 2 story points
+* User Story 1: 5 story points
+* User Story 2: 3 story points
+* User Story 3: 2 story points
 
 ## Business Value:
 
