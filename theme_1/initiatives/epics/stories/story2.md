@@ -11,3 +11,6 @@ As a front-end developer, I want to research and test possible solutions to impr
 
 ## Related tasks
 * [Task 2](tasks/task2.md)
+
+## story points
+2
