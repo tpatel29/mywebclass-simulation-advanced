@@ -12,3 +12,6 @@ Analyze the results to identify any bottlenecks in the deployment process.
 
 ## Related tasks
 * [Task 1](tasks/task1.md)
+
+## Story Point
+12 
