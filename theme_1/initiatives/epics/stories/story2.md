@@ -10,7 +10,10 @@ As a front-end developer, I want to research and test possible solutions to impr
 * Analyze the results to identify the most effective solutions.
 
 ## Related tasks
-* [Task 2](tasks/task2.md)
+* [Task 1](tasks/task5.md)
+* [Task 2](tasks/task6.md)
+* [Task 3](tasks/task7.md)
+* [Task 4](tasks/task8.md)
 
 ## story points
 2
