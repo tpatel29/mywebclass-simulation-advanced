@@ -44,5 +44,7 @@ Improving customer satisfaction by delivering websites faster.
 
 High priority as it will improve the efficiency and productivity of the development team and benefit our customers.
 
-## Related Story
+## Related Stories
 * [story 1](stories/story1.md)
+* [story 2](stories/story2.md)
+* [story 3](stories/story3.md)
