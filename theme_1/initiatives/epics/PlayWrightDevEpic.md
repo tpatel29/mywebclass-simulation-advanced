@@ -12,9 +12,9 @@ Integrate automated tests into CI/CD pipeline to catch performance regressions e
 
 ## User Stories:
 
-As a developer, I want to develop automated tests using Playwright to measure performance metrics, so that I can ensure consistent site performance.
-As a QA, I want to run automated tests on different environments to ensure consistent performance, so that I can catch performance regressions early.
-As a team member, I want to integrate automated tests into the CI/CD pipeline, so that we can ensure site performance as new features are added or changed.
+* As a developer, I want to develop automated tests using Playwright to measure performance metrics, so that I can ensure consistent site performance.
+* As a QA, I want to run automated tests on different environments to ensure consistent performance, so that I can catch performance regressions early.
+* As a team member, I want to integrate automated tests into the CI/CD pipeline, so that we can ensure site performance as new features are added or changed.
 
 ## Dependencies:
 
