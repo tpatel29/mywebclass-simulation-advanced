@@ -42,3 +42,6 @@ More efficient testing through automated tests
 ## Priority:
 
 High
+
+## related stories: 
+1. [Developer story](stories/devstorypw.md)
