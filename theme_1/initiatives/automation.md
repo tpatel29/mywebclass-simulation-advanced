@@ -1,7 +1,7 @@
 # Agile Initiative: Measuring Deployment Times and Researching Ways to Improve Them
 
 ## Related Epics
-*  [Epic 1](epics/epic_template.md)
+*  [Epic 1](epics/epic1.md)
 
 ## Test Plan:
 
