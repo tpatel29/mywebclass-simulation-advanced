@@ -12,6 +12,9 @@ Analyze the results to identify any bottlenecks in the deployment process.
 
 ## Related tasks
 * [Task 1](tasks/task1.md)
+* [Task 2](tasks/task2.md)
+* [Task 3](tasks/task3.md)
+* [Task 4](tasks/task4.md)
 
 ## Story Point
 3 
