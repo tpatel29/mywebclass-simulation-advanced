@@ -13,3 +13,6 @@ Compare the deployment times before and after implementing the solutions to ensu
 
 ## Related tasks
 * [Task 3](tasks/task3.md)
+
+## Story Points
+5
