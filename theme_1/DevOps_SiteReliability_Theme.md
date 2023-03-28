@@ -12,10 +12,10 @@ us up for long-term success.
 * [Conduct web accessibility research, implement changes, perform testing and resolve any issues that arise.](initiatives/accessibility.md)
 * [Implement GDPR requirements with Google Analytics using Consent API and Javascript.](initiatives/analytics.md)
 * [Develop and perform testing with automated tests that can be used to measure site performance in the browser using Playwright](initiatives/performance.md)
-* [Set up a deployment that all members of your team can see to view the progress of the sprint](initiatives/progress)
-* [Measure automated test times and research ways to improve them and implement measurable improvements](initiatives/)
-* [Create easy-to-understand and reliable instructions for installing the project on the developers mac or Windows computer](initiatives/)
-* [Create easy-to-understand instructions and scripts to deploy the project and if necessary how to set up the development server](initiatives/)
+* [Set up a deployment that all members of your team can see to view the progress of the sprint](initiatives/progress.md)
+* [Measure automated test times and research ways to improve them and implement measurable improvements](initiatives/automation.md)
+* [Create easy-to-understand and reliable instructions for installing the project on the developers mac or Windows computer](initiatives/instructions.md)
+* [Create easy-to-understand instructions and scripts to deploy the project and if necessary how to set up the development server](initiatives/scripting.md)
 
 
 ## Test plan
