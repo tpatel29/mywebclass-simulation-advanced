@@ -14,4 +14,4 @@ Analyze the results to identify any bottlenecks in the deployment process.
 * [Task 1](tasks/task1.md)
 
 ## Story Point
-12 
+3 
