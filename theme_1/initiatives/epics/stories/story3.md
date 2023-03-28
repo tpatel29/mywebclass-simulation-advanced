@@ -12,7 +12,10 @@ Measure the deployment times after implementing the solutions and record the res
 Compare the deployment times before and after implementing the solutions to ensure that there is a measurable improvement.
 
 ## Related tasks
-* [Task 3](tasks/task3.md)
+* [Task 1](tasks/task9.md)
+* [Task 2](tasks/task11.md)
+* [Task 3](tasks/task12.md)
+* [Task 4](tasks/task13.md)
 
 ## Story Points
 5
