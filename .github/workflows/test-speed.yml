@@ -1,7 +1,7 @@
 name: Build and Test
 
 on: push
-  branches: "*"
+
 
 env:
   BUILD_DIR: dist
