@@ -1,10 +1,9 @@
-name: Speed Test
+name: Build and Test
 
-on: push
-
-
-env:
-  BUILD_DIR: dist
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -27,9 +26,9 @@ jobs:
           echo "Building with Vite..."
           { time npm run build:vite; } 2> >(tee -a /tmp/build-times.txt >&2)
 
-      - name: Parse build times
+      - name: Generate report
         run: |
-          echo "Parsing build times..."
+          echo "Generating report..."
           node << EOF
           const fs = require('fs');
 
@@ -47,13 +46,13 @@ jobs:
             }
           });
 
-          const table = results.map(time => "| "+time.toFixed(2)+" |").join('\n');
-          console.log("\nBuild times:\n"+table+"\n");
-          fs.writeFileSync('${{ env.BUILD_DIR }}/build-times.md', table);
+          const table = results.map(time => "| +time.toFixed(2)+" |").join('\n');
+          console.log("\nBuild times:\n"+table"+\n`);
+          fs.writeFileSync('build-report.md', "# Build Report\n\n## Build Times\n\n"+table);
           EOF
 
-      - name: Save build output as artifact
+      - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: build-output
-          path: ${{ env.BUILD_DIR }}
+          name: build-report
+          path: build-report.md

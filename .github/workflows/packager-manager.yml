@@ -1,0 +1,47 @@
+name: Test-Package-Manager
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies with npm
+        run: |
+          npm ci
+          echo "::set-output name=build-time-npm::$(date +%s)"
+
+      - name: Install dependencies with yarn
+        run: |
+          yarn install
+          echo "::set-output name=build-time-yarn::$(date +%s)"
+
+      - name: Install dependencies with pnpm
+        run: |
+          npm install -g pnpm
+          pnpm install
+          echo "::set-output name=build-time-pnpm::$(date +%s)"
+
+      - name: Run tests
+        run: |
+          npm test
+
+      - name: Save report
+        run: |
+          echo "Build time results" > build-time-results.txt
+          echo "npm: $(echo ${{ steps.npm.outputs.build-time-npm }} - ${{ github.event.created_at }} | bc)s" >> build-time-results.txt
+          echo "yarn: $(echo ${{ steps.yarn.outputs.build-time-yarn }} - ${{ github.event.created_at }} | bc)s" >> build-time-results.txt
+          echo "pnpm: $(echo ${{ steps.pnpm.outputs.build-time-pnpm }} - ${{ github.event.created_at }} | bc)s" >> build-time-results.txt
+          echo "$(cat build-time-results.txt)"
+
+      - name: Save report as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-time-report
+          path: build-time-results.txt
