@@ -1,4 +1,4 @@
-name: Build and Test
+name: Speed Test
 
 on: push
 
@@ -47,8 +47,8 @@ jobs:
             }
           });
 
-          const table = results.map(time => `| ${time.toFixed(2)} |`).join('\n');
-          console.log(`\nBuild times:\n${table}\n`);
+          const table = results.map(time => "| "+time.toFixed(2)+" |").join('\n');
+          console.log("\nBuild times:\n"+table+"\n");
           fs.writeFileSync('${{ env.BUILD_DIR }}/build-times.md', table);
           EOF
 
