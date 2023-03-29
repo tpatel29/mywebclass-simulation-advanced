@@ -1,8 +1,13 @@
-Task 1: Install and configure Playwright library
-Description: Install and configure the Playwright library for automated testing of site performance.
+# Task 1: 
+Install and configure Playwright library
 
-Effort Estimate: 1 story point
+## Description: Install and configure the Playwright library for automated testing of site performance.
 
-Priority: High
+## Effort Estimate:
+1 story point
 
-Status: To do
+## Priority:
+High
+
+## Status:
+To do
