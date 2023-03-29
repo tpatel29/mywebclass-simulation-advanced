@@ -12,7 +12,7 @@ Tests are integrated into the CI/CD pipeline to ensure that they run automatical
 Performance metrics are logged and reported so that developers can track any changes over time
 
 ## Related tasks
-* [Dev Tasks](tasks/pwdevtesttask.md)
-* [Dev Tasks](tasks/pwdevinstalltask.md)
-* [Dev Tasks](tasks/pwdevimplementtask.md)
+* [Dev Install Task](tasks/pwdevinstalltask.md)
+* [Dev Test Task](tasks/pwdevtesttask.md)
+* [Dev Implement to CD/CI Task](tasks/pwdevimplementtask.md)
 
