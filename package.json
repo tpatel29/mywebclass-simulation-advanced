@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build:vite": "vite build",
+    "build:vite": "vite build ./src",
     "test": "npx standard && npx playwright test --config=playwright.config.js",
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack  --config webpack.config.prod.js",
