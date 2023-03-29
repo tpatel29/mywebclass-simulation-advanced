@@ -67,4 +67,4 @@ Developers (responsible for developing automated tests using Playwright)
 QA (responsible for running and interpreting automated tests)
 
 ## Related Epic
-[Deployment Platform](epics/deplomentplatformepic.md)
+[Playwright development](epics/PlayWrightDevEpic.md)
