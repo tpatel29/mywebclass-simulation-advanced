@@ -46,8 +46,8 @@ jobs:
             }
           });
 
-          const table = results.map(time => "| +time.toFixed(2)+" |").join('\n');
-          console.log("\nBuild times:\n"+table"+\n`);
+          const table = results.map(time => "| "+time.toFixed(2)+" |").join('\n');
+          console.log("\nBuild times:\n"+table+"\n");
           fs.writeFileSync('build-report.md', "# Build Report\n\n## Build Times\n\n"+table);
           EOF
 
