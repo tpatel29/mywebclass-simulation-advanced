@@ -1,0 +1,59 @@
+name: Build and Test
+
+on: push
+  branches: "*"
+
+env:
+  BUILD_DIR: dist
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build with Webpack
+        run: |
+          echo "Building with Webpack..."
+          { time npm run build; } 2> >(tee -a /tmp/build-times.txt >&2)
+
+      - name: Build with Vite
+        run: |
+          echo "Building with Vite..."
+          { time npm run build:vite; } 2> >(tee -a /tmp/build-times.txt >&2)
+
+      - name: Parse build times
+        run: |
+          echo "Parsing build times..."
+          node << EOF
+          const fs = require('fs');
+
+          const content = fs.readFileSync('/tmp/build-times.txt', 'utf8');
+          const lines = content.split('\n');
+          const results = [];
+
+          lines.forEach(line => {
+            const matches = line.match(/real\s+(\d+)m([\d.]+)s/);
+            if (matches) {
+              const minutes = parseInt(matches[1]);
+              const seconds = parseFloat(matches[2]);
+              const totalSeconds = minutes * 60 + seconds;
+              results.push(totalSeconds);
+            }
+          });
+
+          const table = results.map(time => `| ${time.toFixed(2)} |`).join('\n');
+          console.log(`\nBuild times:\n${table}\n`);
+          fs.writeFileSync('${{ env.BUILD_DIR }}/build-times.md', table);
+          EOF
+
+      - name: Save build output as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-output
+          path: ${{ env.BUILD_DIR }}
