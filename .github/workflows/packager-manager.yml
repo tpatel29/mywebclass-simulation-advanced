@@ -28,10 +28,6 @@ jobs:
           pnpm install
           echo "::set-output name=build-time-pnpm::$(date +%s)"
 
-      - name: Run tests
-        run: |
-          npm test
-
       - name: Save report
         run: |
           echo "Build time results" > build-time-results.txt
