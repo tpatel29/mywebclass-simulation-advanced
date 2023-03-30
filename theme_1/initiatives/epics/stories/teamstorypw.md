@@ -12,6 +12,6 @@ As a team member, I want to integrate automated tests into the CI/CD pipeline, s
 * Performance metrics are logged and reported so that the team can easily track performance changes over time.
 
 ## Related Tasks
-* [Dev Install Task](tasks/pwdevinstalltask.md)
-* [Dev Test Task](tasks/pwdevtesttask.md)
-* [Dev Implement to CD/CI Task](tasks/pwdevimplementtask.md)
+* [Team Addition Task](tasks/teamadditiontask.md)
+* [Team Alert Task](tasks/teamalerttask.md)
+* [Team Report Task](tasks/teamreporttask.md)
