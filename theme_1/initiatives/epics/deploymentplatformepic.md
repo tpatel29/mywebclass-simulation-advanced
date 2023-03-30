@@ -47,3 +47,8 @@ As a team member, I want to be able to view a task's history and any associated 
 ## Priority:
 
 High, as this initiative will significantly improve the team's ability to plan and execute sprints efficiently.
+
+## Related Stories
+* [Access story](stories/systemplatformstory.md)
+* [Delegation story](stories/delegationplatformstory.md)
+* [History story](stories/historyplatformstory.md)
