@@ -1,14 +1,14 @@
-# Task 1:
-Add tests to CI/CD pipeline
+# Task 2:
+Set up performance alerts
 
-## Description:
-Integrate the automated tests into the CI/CD pipeline and ensure that they run automatically on every build.
+## Description: 
+Set up alerts to notify the development team of any performance regressions.
 
-## Effort Estimate: 
-1 story point
+## Effort Estimate:
+2 story points
 
 ## Priority:
 High
 
-## Status: 
+## Status:
 To do
