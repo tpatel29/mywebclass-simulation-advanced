@@ -1,15 +1,15 @@
-# User Story 1:
-Develop automated tests using Playwright to measure performance metrics
+# User Story 2:
+Run automated tests on different environments to ensure consistent performance
 
 ## Description:
-As a developer, I want to develop automated tests using Playwright to measure performance metrics, so that I can ensure consistent site performance.
+As a QA, I want to run automated tests on different environments to ensure consistent performance, so that I can catch performance regressions early.
 
 ## Acceptance Criteria:
 
-* Automated tests are developed using Playwright to measure performance metrics such as page load time, time to first byte, and time to interactive
-* Tests are designed to be run on different environments (e.g. local, staging, production)
-* Tests are integrated into the CI/CD pipeline to ensure that they run automatically on every build
-* Performance metrics are logged and reported so that developers can track any changes over time
+* Automated tests are run on different environments to ensure consistent performance (e.g. local, staging, production)
+* Tests are run automatically on every build, and any performance regressions are caught early
+* Test results are logged and reported so that the team can easily track performance changes over time
+* Any performance regressions are escalated to the development team for investigation and resolution
 
 ## Related Tasks
 
