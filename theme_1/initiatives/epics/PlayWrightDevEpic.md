@@ -45,3 +45,5 @@ High
 
 ## related stories: 
 1. [Developer story](stories/devstorypw.md)
+2. [QA story](stories/QAstorypw.md)
+3. [Team member story](stories/teamstorypw.md)
