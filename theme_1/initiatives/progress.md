@@ -71,4 +71,4 @@ The deployment will be set up using a cloud-based service such as AWS or Azure, 
 * Technical Writer
 
 ## Related Epic
-[Deployment System](epics/deplomentplatformepic.md) 
+[Deployment System](epics/deploymentplatformepic.md) 
