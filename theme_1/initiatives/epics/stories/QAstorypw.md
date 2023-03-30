@@ -13,6 +13,6 @@ As a QA, I want to run automated tests on different environments to ensure consi
 
 ## Related Tasks
 
-* [Dev Install Task](tasks/pwdevinstalltask.md)
-* [Dev Test Task](tasks/pwdevtesttask.md)
-* [Dev Implement to CD/CI Task](tasks/pwdevimplementtask.md)
+* [QA configuration task](tasks/QAconfiguretask.md)
+* [QA enviornment task](tasks/QAenviornmenttask.md)
+* [QA Log task](tasks/QAlogtask.md)
